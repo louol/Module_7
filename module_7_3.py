@@ -15,7 +15,7 @@ class WordsFinder:
                     lines = line.replace(',', '').replace('.', '').replace('=', '').replace('!',  '').replace('?', '').replace(';', '').replace(':', '').replace(' - ', '')
                     words += lines.split()
                 all_words[file_name] = words
-                return all_words
+        return all_words
 
     def find(self, word):
         result = {}
